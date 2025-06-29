@@ -33,12 +33,12 @@ tags:
 
 ## **Phase 1: 基盤構築**
 
-### **A. Expo環境**
+### **A. Expo環境** ✅ **完了**
 
-- [x] **A1.** `npm install -g expo-cli`
-- [ ] **A2.** Expoアカウント作成
+- [x] **A1.** `npm install -g @expo/cli` (新しいCLIにアップグレード)
+- [x] **A2.** Expoアカウント作成・ログイン (`kojitorishima`)
 - [x] **A3.** テストプロジェクト作成 `npx create-expo-app test-app --template blank`
-- [ ] **A4.** スマホにExpo Goインストール
+- [x] **A4.** スマホにExpo Goインストール
 - [x] **A5.** QRコードでスマホ表示テスト
 
 ### **B. GitHub連携**
@@ -85,9 +85,12 @@ tags:
 
 ## **⚡ 今すぐやること**
 
-1. **A1:** `npm install -g expo-cli`
-2. **A2:** https://expo.dev/ でアカウント作成
-3. **C1:** Slack Workspace作成
+~~1. **A1:** `npm install -g @expo/cli` ✅ 完了~~
+~~2. **A2:** https://expo.dev/ でアカウント作成 ✅ 完了~~
+
+**次のステップ:**
+1. **B1:** リポジトリ作成・プッシュ
+2. **C1:** Slack Workspace作成
 
 ---
 
@@ -96,3 +99,5 @@ tags:
 - [ ] Slackから5分以内でスマホ確認
 - [ ] 1日で簡単なアプリ完成
 - [ ] 移動中でもスマホのみで開発完結 
+
+ 
