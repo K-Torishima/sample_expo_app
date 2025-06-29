@@ -41,10 +41,10 @@ tags:
 - [x] **A4.** スマホにExpo Goインストール
 - [x] **A5.** QRコードでスマホ表示テスト
 
-### **B. GitHub連携**
+### **B. GitHub連携** ✅ **完了**
 
-- [ ] **B1.** リポジトリ作成・プッシュ
-- [ ] **B2.** GitHub Actions設定
+- [x] **B1.** リポジトリ作成・プッシュ (https://github.com/K-Torishima/sample_expo_app)
+- [x] **B2.** GitHub Actions設定 (Expo CI/CDワークフロー)
 
 ## **Phase 2: Slack Bot開発**
 
@@ -89,8 +89,12 @@ tags:
 ~~2. **A2:** https://expo.dev/ でアカウント作成 ✅ 完了~~
 
 **次のステップ:**
-1. **B1:** リポジトリ作成・プッシュ
-2. **C1:** Slack Workspace作成
+~~1. **B1:** リポジトリ作成・プッシュ ✅ 完了~~
+~~2. **B2:** GitHub Actions設定 ✅ 完了~~
+
+**Phase 2開始:**
+1. **C1:** Slack Workspace作成
+2. **D1:** AI API選定（Claude/Gemini/ChatGPT）
 
 ---
 
