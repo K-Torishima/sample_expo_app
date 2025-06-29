@@ -1,0 +1,58 @@
+name: Expo CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: test-app/package-lock.json
+        
+    - name: Setup Expo CLI
+      run: npm install -g @expo/cli
+      
+    - name: Install dependencies
+      run: |
+        cd test-app
+        npm ci
+        
+    - name: Check Expo project
+      run: |
+        cd test-app
+        npx expo doctor
+        
+    - name: Run tests (placeholder)
+      run: |
+        cd test-app
+        echo "✅ テスト実行準備完了"
+        echo "📱 Expoプロジェクト構造チェック完了"
+        
+    - name: Build info
+      run: |
+        cd test-app
+        echo "🚀 ビルド環境情報:"
+        echo "Node.js: $(node --version)"
+        echo "npm: $(npm --version)"
+        echo "Expo CLI: $(npx expo --version)"
+        
+    # 今後のSlack通知用にコメントアウト
+    # - name: Notify Slack on success
+    #   if: success()
+    #   run: echo "✅ ビルド成功 - Slack通知準備中"
+    #   
+    # - name: Notify Slack on failure  
+    #   if: failure()
+    #   run: echo "❌ ビルド失敗 - Slack通知準備中" 
